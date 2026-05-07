@@ -1,0 +1,6 @@
+{
+  "name": "Instagram Non-Follow Back Checker",
+  "description": "Analyze your Instagram data to find who doesn't follow you back. Secure, browser-based JSON analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

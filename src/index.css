@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0a0c10] text-slate-100 font-sans antialiased;
+  }
+}
+
+.glass {
+  @apply bg-slate-900/50 border border-slate-800 backdrop-blur-md;
+}
+
+.glass-panel {
+  @apply bg-slate-900/40 border border-slate-800 rounded-3xl backdrop-blur-sm;
+}
+
+.glass-hover {
+  @apply transition-all duration-300;
+}
+
+.glass-hover:hover {
+  @apply bg-slate-800/40 border-slate-700/50;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0c10;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-800 rounded-full cursor-pointer hover:bg-slate-700 transition-colors;
+}
+
+.font-mono {
+  @apply font-mono uppercase tracking-widest;
+}
